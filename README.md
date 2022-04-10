@@ -1,4 +1,4 @@
-This extension code is owned by honguyenminh (Someone#9954).  
+This extension is originally from honguyenminh (Someone #9954). Now it is maintained by me.   
   
 ## Installation
 - Extract the zip file.
