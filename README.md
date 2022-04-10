@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This extension code is owned by honguyenminh (Someone#9954).  
   
 ## Installation
@@ -18,7 +17,3 @@ This extension code is owned by honguyenminh (Someone#9954).
 ## Credit
 Creator: honguyenminh (Someone#9954).  
 Contributor: vietng322611 (murasaki#1843).  
-=======
-# Medium-rare-spider
-The ultimate nhentai extension :))
->>>>>>> e0b6b49f943df30deaaf4db9df28be8ed485b3e0
