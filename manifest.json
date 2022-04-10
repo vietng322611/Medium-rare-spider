@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Medium rare spider",
+    "description": "Medium rare spider",
+    "version": "1.0.0",
+    "icons": {
+        "64": "icon-64.png"
+    },
+    "omnibox": {
+        "keyword": "~"
+    },
+    "background": {
+        "scripts": ["medium rare spider.js"]
+    }
+}
