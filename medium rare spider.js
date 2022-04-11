@@ -21,10 +21,12 @@ chrome.omnibox.onInputChanged.addListener(function(input, suggest) {
         })
     }
     // Add search option
-    suggestions.push({
-        description: "Search on nhentai with given query",
-        content: searchPrefix + encodeURIComponent(input)
-    })
+    else {
+        suggestions.push({
+            description: "Search on nhentai with given query",
+            content: searchPrefix + encodeURIComponent(input)
+        })
+    }
     suggest(suggestions)
 })
 
@@ -85,4 +87,8 @@ chrome.omnibox.onInputEntered.addListener((input, disposition) => {
             chrome.tabs.create({url: input, active: false})
             break
     }
+})
+
+chrome.browserAction.onClicked.addListener((tab) => {
+    chrome.tabs.create({url: baseUrl}) // Open nhentai homepage in a new tab
 })

@@ -11,5 +11,12 @@
     },
     "background": {
         "scripts": ["medium rare spider.js"]
+    },	
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": {
+            "64": "icon-64.png"
+        },
+        "default_title": "Nhentai"
     }
 }
