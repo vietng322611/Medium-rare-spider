@@ -89,6 +89,16 @@ chrome.omnibox.onInputEntered.addListener((input, disposition) => {
     }
 })
 
-chrome.browserAction.onClicked.addListener((tab) => {
-    chrome.tabs.create({url: baseUrl}) // Open nhentai homepage in a new tab
+
+chrome.browserAction.onClicked.addListener(() => {// Open nhentai homepage in a new tab
+    var fs = window.RequestFileSystem || window.webkitRequestFileSystem;
+
+    if (!fs) {
+        chrome.tabs.create({url: baseUrl})
+    }
+    else {
+        chrome.windows.create({url: baseUrl, incognito: true}, function onCreated(window) {
+            chrome.windows.update(window.id, {state:'maximized'})
+        })
+    }
 })
