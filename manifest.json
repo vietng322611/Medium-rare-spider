@@ -18,5 +18,6 @@
             "64": "icon-64.png"
         },
         "default_title": "Nhentai"
-    }
+    },
+    "permissions": ["tabs"]
 }
